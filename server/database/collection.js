@@ -1,6 +1,8 @@
 const Collection = {
-    USERS: 'user',
-    POSTS: 'posts',
-    COMMENTS: 'comments'
-};
+    USERS:'users',
+    PRODUCTS:'products',
+    ORDERS:'orders'
+
+
+}
 export default Collection;

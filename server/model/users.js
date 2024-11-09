@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import Collection from '../database/collection.js';
 
 const userSchema = new mongoose.Schema({
     userName: { type: String, required: true, trim: true },
@@ -6,5 +7,5 @@ const userSchema = new mongoose.Schema({
     age: { type: Number, min: 0 }
 });
 
-const UsersModel = mongoose.model('User', userSchema);
+const UsersModel = mongoose.model(Collection.USERS, userSchema);
 export default UsersModel;
